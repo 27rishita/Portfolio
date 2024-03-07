@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/aad483dabe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" alt="logo" class="logo">
+                <ul id="sidemenu ">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI Designer</p>
+                <h1>Hi, I'm <span>Rishita</span><br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images\portfolio_pic.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Welcome to my corner of the web! I'm Rishita Sharma, a passionate and dedicated UI Designer with a B.Tech undergraduate in IT major from NIT Srinagar(J&K), boasting a current CGPA of 8.1. My niche lies in combining technical expertise with a creative flair, crafting elegant solutions to complex problems. My mission is to create designs that not only look beautiful but also enhance usability. I embarked on a journey of self-directed learning in UI design. Through diligent self-study and resource exploration, alongside managing coursework demands, I honed my skills and deepened my understanding. This determined pursuit not only broadened my expertise but also ignited a lasting passion for creating meaningful digital experiences. So Let's collaborate and bring your vision to life!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI</span><br>Designing Web Interfaces</li>
+                            <li><span>OOPs</span><br>Object Oriented Programming</li>
+                            <li><span>DSA</span><br>Data Structure and Algorithms</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>IIT Ropar Internship</span><br>Research Internship aimed to optimize cache utilisation in SSD through access pattern analysis.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>B.tech(IT) from NIT Srinagar- CGPA:8.09</li>
+                            <li><span>2019</span><br>HSC/Intermediate- Percentage:87%</li>
+                            <li><span>2017</span><br>SSC- Percentage:91.67%</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-------------portfolio---------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/spotify.png" alt="">
+                    <div class="layer">
+                        <h3>Spotify Clone Website</h3>
+                        <p>It is a responsive web application replicating the core features of Spotify using HTML, CSS, and JavaScript. It has features including volume control, previous and next track buttons, and seamless playlist management.The project delivers an interactive platform for users, combining functionality with a user-friendly design.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/studysync.jpg" alt="">
+                    <div class="layer">
+                        <h3>StudySync Website</h3>
+                        <p>The StudySync website showcases cutting-edge HTML and CSS techniques, ensuring a modern and dynamic user experience. CSS Grid and Flexbox layouts are utilized to create responsive and visually stunning designs. Additionally, advanced CSS animations and transitions bring elements to life, enhancing user engagement and interaction. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images\nutrition.jpg" alt="">
+                    <div class="layer">
+                        <h3>Nutrition website</h3>
+                        <p>This website showcases the nutritional value of various food items in an interactive and accessible manner. It includes a light-dark theme toggle implemented with JavaScript, allowing users to switch between different color schemes for improved readability and personal preference.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+           <a href="#" class="btn">See more</a> 
+        </div>
+    </div>
+    <!-------- contact -------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>hrishitasharma27@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9352423177</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/rishita-sharma2003/"><i class="fa-brands fa-linkedin"></i></a> 
+                    </div>
+                    <a href="https://drive.google.com/file/d/1ODq4OhpgvYJ4C4bz46M7NZOqLerkpp3d/view?usp=sharing" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Rishita. Made with <i class="fa-solid fa-heart"></i> by Rishita Sharma</p>
+        </div>
+    </div>
+    
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ </script> 
+ <script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = '0';
+    }
+    function closemenu(){
+        sidemenu.style.right = '-200px';
+    }
+ </script>  
+</body>
+</html>
